@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Доска</title>
+    <link href="styles.css" rel="stylesheet" />
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            /* Вертикальное расположение */
+            height: 100vh;
+            /* Полная высота экрана */
+            margin: 0;
+        }
+
+        .tools {
+            width: 150px;
+            /* Ширина бокового меню */
+            padding: 20px;
+            border-right: none;
+            background-color: none;
+            list-style-type: none;
+            /* Убираем точки */
+            position: absolute;
+            /* Абсолютное позиционирование */
+            top: 0;
+            left: 0;
+            /* По левому краю страницы */
+        }
+
+        .canvas-container {
+            flex-grow: 1;
+            /* Заполнение оставшегося пространства */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 220px;
+            /* Отступ, чтобы не перекрывать боковое меню */
+        }
+
+        .canvas {
+            width: 1000%;
+            height: 650px;
+            border: 1px solid #000;
+            background-color: #fff;
+        }
+
+        footer {
+            text-align: center;
+            /* Центрирование футера */
+            padding: 0px;
+            background-color: none;
+            /* Цвет фона футера */
+            margin-top: auto;
+            /* Отодвигает футер вниз */
+        }
+
+        button {
+            width: 100%;
+            /* Кнопки занимают всю ширину */
+            margin: 5px 0;
+            /* Отступы между кнопками */
+            padding: 1px;
+            /* Внутренние отступы */
+            cursor: pointer;
+            /* Курсор при наведении */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="tools">
+        <h2>Инструменты</h2>
+        <ul>
+            <li><button onclick="alert('Карандаш выбран')">Карандаш</button></li>
+            <li><button onclick="alert('Кисть выбрана')">Кисть</button></li>
+            <li><button onclick="alert('Ластик выбран')">Ластик</button></li>
+            <li><button onclick="alert('Цветовая палитра открыта')">Цветовая палитра</button></li>
+            <li><button onclick="alert('Трафарет выбран')">Трафарет</button></li>
+            <li><button onclick="alert('Штамп выбран')">Штамп</button></li>
+            <li><button onclick="alert('Форма выбрана')">Форма</button></li>
+            <li><button onclick="alert('Текстура выбрана')">Текстура</button></li>
+        </ul>
+    </div>
+    <div class="canvas-container">
+        <canvas class="canvas"></canvas>
+    </div>
+
+    <footer>
+        <p><strong>Контактная информация:</strong></p>
+        <p>Адрес: Улица Мира, 78. Харьков, Украина</p>
+        <p>Телефон: +38(063)-98-25-333</p>
+        <p>Электронная почта: info@example.com</p>
+        <p><strong>Копирайт:</strong> "Галерея Идей"</p>
+        <p>
+            <a href="about.html">О нас</a> |
+            <a href="privacy.html">Политика конфиденциальности</a> |
+            <a href="terms.html">Условия использования</a>
+        </p>
+    </footer>
+</body>
+
+</html>

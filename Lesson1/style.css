@@ -1,0 +1,90 @@
+    body {
+        display: flex;
+        flex-direction: column;
+        /* Вертикальное расположение */
+        height: 100vh;
+        /* Полная высота экрана */
+        margin: 0;
+    }
+
+    .tools {
+        width: 150px;
+        /* Ширина бокового меню */
+        padding: 20px;
+        border-right: none;
+        background-color: none;
+        list-style-type: none;
+        /* Убираем точки */
+        position: absolute;
+        /* Абсолютное позиционирование */
+        top: 0;
+        left: 0;
+        /* По левому краю страницы */
+    }
+
+    .canvas-container {
+        flex-grow: 1;
+        /* Заполнение оставшегося пространства */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 220px;
+        /* Отступ, чтобы не перекрывать боковое меню */
+    }
+
+    .canvas {
+        width: 1000px;
+        height: 650px;
+        border: 1px solid #000;
+        background-color: #fff;
+    }
+
+    footer {
+        text-align: center;
+        /* Центрирование футера */
+        padding: 0px;
+        background-color: none;
+        /* Цвет фона футера */
+        margin-top: auto;
+        /* Отодвигает футер вниз */
+    }
+
+    button {
+        width: 100%;
+        /* Кнопки занимают всю ширину */
+        margin: 5px 0;
+        /* Отступы между кнопками */
+        padding: 2px;
+        /* Внутренние отступы */
+        cursor: pointer;
+        /* Курсор при наведении */
+    }
+
+   .tools {
+       list-style-type: none;
+       /* Убираем точки */
+       padding: 0;
+       /* Убираем отступы */
+       margin: 0;
+       /* Убираем отступы */
+   }
+
+   .tools button {
+       background-color: #4CAF50;
+       /* Задаем цвет фона кнопок (зеленый) */
+       color: white;
+       /* Задаем цвет текста кнопок (белый) */
+       border: none;
+       /* Убираем границу */
+       padding: 10px;
+       /* Отступы внутри кнопок */
+       margin: 5px 0;
+       /* Отступы между кнопками */
+       cursor: pointer;
+       /* Курсор при наведении */
+   }
+
+   .tools button:hover {
+       background-color: #45a049;
+       /* Цвет фона при наведении (темно-зеленый) */
+   }
