@@ -1,8 +1,9 @@
-
-   .center-text {
+.center-text {
     text-align: center;
-    font-size: 24px; /* Увеличенный шрифт */
-    color: #238149 /* Цвет текста */
+    font-size: 24px;
+    /* Увеличенный шрифт */
+    color: #238149
+        /* Цвет текста */
 }
 
 div {
@@ -18,14 +19,14 @@ img {
 
 /* Специфичные стили для изображения с классом "my-image" */
 .my-image {
-    border: 2px solid #000;
+    border: 2px solid #000000;
     border-radius: 10px;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
     width: 500px;
-    /* Укажите нужную ширину */
     height: auto;
-    /* Автоматическая высота */
+
 }
+
 p {
     color: rgb(43, 226, 92);
 }
