@@ -24,18 +24,24 @@ body,html {
     left: 50%;
     transform: translate(-50%, -50%);
     color: rgb(4, 2, 17);
-    font-size: 8em;
+    font-size: 11em;
     text-align: center;
 }
 .navbar {
     position: absolute;
     top: 0;
-    left: 0;
+    left: 53%;
+    /* Центрируем по горизонтали */
+    transform: translateX(-50%);
+    /* Сдвигаем на половину ширины */
     width: auto;
-    /* Установите ширину на auto */
+    /* Ширина на auto */
     background: none;
+    /* Убираем фон */
     color: rgb(24, 2, 45);
+    /* Цвет текста */
     padding: 1.5rem;
+    /* Отступы внутри */
 }
 
 .nav {
@@ -46,86 +52,62 @@ body,html {
     margin: 0;
     /* Убираем отступы */
     display: flex;
-    /* Элементы в столбик */
+    /* Элементы в линию */
     text-decoration: underline;
+    /* Убираем подчеркивание по умолчанию */
 }
+
 .nav-link {
     color: rgb(0, 76, 255);
     /* Цвет ссылок */
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     /* Размер шрифта для ссылок */
-    margin-right: 2rem;
+    margin-right: 8rem;
     /* Отступ справа между ссылками */
 }
 
 .nav-link:hover {
     color: rgb(140, 0, 255);
+    /* Цвет при наведении */
     text-decoration: underline;
+    /* Подчеркивание при наведении */
 }
 
-.button-container {
-    position: absolute;
-    top: 5%;
-    right: 0%;
-    transform: translateY(-50%);
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
 }
 
-.donate-button {
-    background: linear-gradient(to right, yellow, lightblue);
-    /* Желто-голубой градиент */
-    color: black;
-    /* Цвет текста */
-    border: none;
-    /* Убираем рамку */
-    padding: 20px 30px;
-    /* Увеличенные отступы для улучшения вида */
-    font-size: 1.5em;
+.board {
+    width: 600px;
+    height: 600px;
+    background-color: #f0f0f0;
+    /* Цвет фона доски */
+    border: 2px solid #ccc;
+    /* Граница доски */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
     /* Размер шрифта */
-    cursor: pointer;
-    /* Указатель при наведении */
-    border-radius: 25px;
-    /* Скругление углов для облака */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    /* Тень */
-    position: relative;
-    /* Для создания псевдоэлементов */
-    overflow: hidden;
-    /* Убираем лишние части */
-    transition: background 0.3s;
-    /* Плавный переход при наведении */
+    color: #333;
+    /* Цвет текста */
 }
 
-.donate-button::before,
-.donate-button::after {
-    content: '';
-    position: absolute;
-    background: inherit;
-    /* Унаследовать градиент */
-    border-radius: 50%;
-    /* Сделать круглыми */
-    width: 50px;
-    /* Ширина */
-    height: 50px;
-    /* Высота */
+button {
+    background-color: #4CAF50; /* Зеленый цвет */
+    color: white; /* Цвет текста */
+    padding: 10px 20px; /* Отступы */
+    border: none; /* Без рамки */
+    border-radius: 4px; /* Закругленные углы */
+    cursor: pointer; /* Указатель курсора */
 }
 
-.donate-button::before {
-    top: -25px;
-    /* Положение сверху */
-    left: 10px;
-    /* Положение слева */
-}
-
-.donate-button::after {
-    bottom: -25px;
-    /* Положение снизу */
-    right: 10px;
-    /* Положение справа */
-}
-
-.donate-button:hover {
-    background: linear-gradient(to right, lightblue, yellow);
-    /* Изменение градиента при наведении */
+button:hover {
+    background-color: #45a049; /* Темно-зеленый при наведении */
 }
 
  .footer-text {
