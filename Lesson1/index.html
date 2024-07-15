@@ -9,6 +9,7 @@
     <style>
         .image-container {
             position: relative;
+            /* Для позиционирования дочерних элементов */
             display: inline-block;
         }
 
@@ -36,34 +37,39 @@
 
         /* Стили для навигационной панели */
         .navbar {
-            background-image: url('path/to/your/image.jpg');
-            /* Замените на путь к вашей картинке */
-            background-size: cover;
-            /* Заполняет панель фоном */
-            background-position: center;
-            /* Центрирует фоновое изображение */
-            padding: 1rem;
-            /* Отступы внутри панели */
-            color: white;
+            position: absolute;
+            /* Чтобы расположить навигацию поверх изображения */
+            top: 0;
+            /* Позиция сверху */
+            left: 0;
+            /* Позиция слева */
+            width: 100%;
+            /* Ширина панели на 100% */
+              background: none; 
+             /* Полупрозрачный фон для читаемости текста */
+            color: rgb(24, 2, 45);
             /* Цвет текста */
+            padding: 1,5rem;
+            /* Отступы внутри панели */
         }
 
         .navbar-brand {
-            font-size: 1.5rem;
+            font-size: 2rem;
             /* Размер шрифта для бренда */
             font-weight: bold;
             /* Жирный шрифт */
-            color: white;
+            color: rgb(36, 1, 1);
             /* Цвет текста бренда */
         }
 
         .nav-link {
-            color: white;
+            color: blue;
             /* Цвет текста ссылок */
+             font-size: 1.2rem; /* Размер шрифта для ссылок */
         }
 
         .nav-link:hover {
-            color: #f1f1f1;
+            color: rgb(9, 221, 9);
             /* Цвет текста при наведении */
         }
     </style>
@@ -73,44 +79,22 @@
     <div class="image-container">
         <img src="top-view-painting-material_23-2147961505.avif" alt="Описание изображения" class="my-image">
         <p class="center-text">Draw your dream</p>
-    </div>
 
-    <nav id="navbar-example2" class="navbar bg-body-tertiary px-3 mb-3">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <ul class="nav nav-pills">
-            <li class="nav-item">
-                <a class="nav-link" href="#scrollspyHeading1">First</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#scrollspyHeading2">Second</a>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
-                    aria-expanded="false">Dropdown</a>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#scrollspyHeading3">Third</a></li>
-                    <li><a class="dropdown-item" href="#scrollspyHeading4">Fourth</a></li>
-                    <li>
-                        <hr class="dropdown-divider">
-                    </li>
-                    <li><a class="dropdown-item" href="#scrollspyHeading5">Fifth</a></li>
-                </ul>
-            </li>
-        </ul>
-    </nav>
-
-    <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%"
-        data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
-        <h4 id="scrollspyHeading1">First heading</h4>
-        <p>...</p>
-        <h4 id="scrollspyHeading2">Second heading</h4>
-        <p>...</p>
-        <h4 id="scrollspyHeading3">Third heading</h4>
-        <p>...</p>
-        <h4 id="scrollspyHeading4">Fourth heading</h4>
-        <p>...</p>
-        <h4 id="scrollspyHeading5">Fifth heading</h4>
-        <p>...</p>
+        <nav id="navbar-example2" class="navbar">
+            <a class="navbar-brand" href="#">MENU</a>
+            <ul class="nav nav-pills">
+                <li class="nav-item">
+                    <a class="nav-link" href="#scrollspyHeading1">Paints</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#scrollspyHeading2">Pencils</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                        aria-expanded="false">Board</a>  
+                </li>
+            </ul>
+        </nav>
     </div>
 </body>
 
