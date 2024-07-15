@@ -6,11 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My page</title>
     <link href="styles.css" rel="stylesheet" />
+    <style>
+        .image-container {
+            position: relative;
+            display: inline-block;
+        }
+
+        .my-image {
+            width: 100vw;
+            /* Занимает всю ширину окна */
+            height: 100vh;
+            /* Занимает всю высоту окна */
+            object-fit: cover;
+            /* Сохраняет пропорции изображения */
+        }
+
+        .center-text {
+            position: absolute;
+            top: 5%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            /* Цвет текста */
+            font-size: 2em;
+            /* Размер шрифта */
+            text-align: center;
+            /* Центрирование текста */
+        }
+    </style>
 </head>
 
 <body>
-    <p class="center-text">Привіт світ!!!</p>
-    <img src="images (1).jfif" alt="Описание изображения" class="my-image">
+    <div class="image-container">
+        <img src="images (2).jfif" alt="Описание изображения" class="my-image">
+        <p class="center-text">Привіт світ!!!</p>
+    </div>
 </body>
 
 </html>
