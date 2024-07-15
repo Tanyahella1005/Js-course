@@ -7,75 +7,78 @@
     <title>My page</title>
     <link href="styles.css" rel="stylesheet" />
     <style>
+         body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            overflow: hidden; /* Убираем прокрутку */
+        }
         .image-container {
-            position: relative;
-            /* Для позиционирования дочерних элементов */
-            display: inline-block;
+             position: relative;
+             display: inline-block;
         }
 
         .my-image {
             width: 100vw;
-            /* Занимает всю ширину окна */
             height: 100vh;
-            /* Занимает всю высоту окна */
             object-fit: cover;
-            /* Сохраняет пропорции изображения */
         }
 
         .center-text {
             position: absolute;
-            top: 30%;
+            top: 5%;
             left: 50%;
             transform: translate(-50%, -50%);
             color: rgb(4, 2, 17);
-            /* Цвет текста */
             font-size: 5em;
-            /* Размер шрифта */
             text-align: center;
-            /* Центрирование текста */
         }
 
         /* Стили для навигационной панели */
         .navbar {
             position: absolute;
-            /* Чтобы расположить навигацию поверх изображения */
             top: 0;
-            /* Позиция сверху */
             left: 0;
-            /* Позиция слева */
-            width: 100%;
-            /* Ширина панели на 100% */
-              background: none; 
-             /* Полупрозрачный фон для читаемости текста */
+            width: auto;
+            /* Установите ширину на auto */
+            background: none;
             color: rgb(24, 2, 45);
-            /* Цвет текста */
-            padding: 1,5rem;
-            /* Отступы внутри панели */
+            padding: 1.5rem;
         }
 
         .navbar-brand {
             font-size: 2rem;
-            /* Размер шрифта для бренда */
             font-weight: bold;
-            /* Жирный шрифт */
             color: rgb(36, 1, 1);
-            /* Цвет текста бренда */
         }
+
+        .nav {
+            list-style-type: none;
+            /* Убираем точки */
+            padding: 0;
+            /* Убираем отступы */
+            margin: 0;
+            /* Убираем отступы */
+            display: block;
+            /* Элементы в столбик */
+             text-decoration: underline;
+        }
+        
 
         .nav-link {
             color: blue;
             /* Цвет текста ссылок */
-             font-size: 1.2rem; /* Размер шрифта для ссылок */
-              margin-right: 1rem; /* Отступ справа между ссылками */
+             text-decoration: none; /* Убираем подчеркивание */
+            font-size: 1.2rem;
+            /* Размер шрифта для ссылок */
+            margin-right: 2rem;
+            /* Отступ справа между ссылками */
         }
-        
 
         .nav-link:hover {
-            color: rgb(9, 221, 9);
-            /* Цвет текста при наведении */
-        }
-        .nav {
-           justify-content: flex-start; /* Выравнивание ссылок влево */
+             color: rgb(0, 0, 255);
+             text-decoration: underline;
         }
     </style>
 </head>
@@ -89,18 +92,50 @@
             <a class="navbar-brand" href="#">MENU</a>
             <ul class="nav nav-pills">
                 <li class="nav-item">
-                    <a class="nav-link" href="#scrollspyHeading1">Paints</a>
+                    <a class="nav-link" href="#scrollspyHeading1">Галерея</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#scrollspyHeading2">Pencils</a>
+                    <a class="nav-link" href="#scrollspyHeading2">Уроки</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#scrollspyHeading2">Блог</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
-                        aria-expanded="false">Board</a>  
+                        aria-expanded="false">Доска</a>
                 </li>
             </ul>
         </nav>
     </div>
+        <div class="footer-text">
+            <p><strong>Контактная информация:</strong></p>
+            <p>Адрес: Улица Мира, 78. Харьков, Украина</p>
+            <p>Телефон: +38(063)-98-25-333</p>
+            <p>Электронная почта: info@example.com</p>
+            <p><strong>Социальные сети:</strong></p>
+            <p>
+                <a href="https://facebook.com" target="_blank">Facebook</a> |
+                <a href="https://twitter.com" target="_blank">Twitter</a> |
+                <a href="https://instagram.com" target="_blank">Instagram</a>
+            </p>
+        
+            <p><strong>Копирайт:</strong> © 2024 Название компании</p>
+        
+            <p><strong>Подписка на новости:</strong></p>
+            <form>
+                <input type="email" placeholder="Ваш email" required>
+                <button type="submit">Подписаться</button>
+            </form>
+        
+            <p><strong>Помощь и поддержка:</strong> <a href="#support">Часто задаваемые вопросы</a></p>
+            <p><a href="#about">О нас</a> | <a href="#privacy">Политика конфиденциальности</a> | <a href="#terms">Условия
+                    использования</a></p>
+        </div>
+
+    </div>
+
+
+
 </body>
 
 </html>

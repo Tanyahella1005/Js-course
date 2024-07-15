@@ -1,74 +1,104 @@
- .image-container {
-     position: relative;
-     /* Для позиционирования дочерних элементов */
-     display: inline-block;
- }
+.image-container {
+    position: relative;
+    display: inline-block;
+}
 
- .my-image {
-     width: 100vw;
-     /* Занимает всю ширину окна */
-     height: 100vh;
-     /* Занимает всю высоту окна */
-     object-fit: cover;
-     /* Сохраняет пропорции изображения */
- }
+.my-image {
+    width: 100vw;
+    height: 200vh;
+    object-fit: cover;
+}
 
- .center-text {
-     position: absolute;
-     top: 30%;
-     left: 50%;
-     transform: translate(-50%, -50%);
-     color: rgb(4, 2, 17);
-     /* Цвет текста */
-     font-size: 5em;
-     /* Размер шрифта */
-     text-align: center;
-     /* Центрирование текста */
- }
+.center-text {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(4, 2, 17);
+    font-size: 5em;
+    text-align: center;
+}
 
- /* Стили для навигационной панели */
- .navbar {
-     position: absolute;
-     /* Чтобы расположить навигацию поверх изображения */
-     top: 0;
-     /* Позиция сверху */
-     left: 0;
-     /* Позиция слева */
-     width: 100%;
-     /* Ширина панели на 100% */
-     background: none;
-     /* Полупрозрачный фон для читаемости текста */
-     color: rgb(24, 2, 45);
-     /* Цвет текста */
-     padding: 1.5rem;
-     /* Отступы внутри панели */
- }
+/* Стили для навигационной панели */
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: auto;
+    /* Установите ширину на auto */
+    background: none;
+    color: rgb(24, 2, 45);
+    padding: 1.5rem;
+}
 
- .navbar-brand {
-     font-size: 2rem;
-     /* Размер шрифта для бренда */
-     font-weight: bold;
-     /* Жирный шрифт */
-     color: rgb(36, 1, 1);
-     /* Цвет текста бренда */
- }
+.navbar-brand {
+    font-size: 2rem;
+    font-weight: bold;
+    color: rgb(36, 1, 1);
+}
+
+.nav {
+    list-style-type: none;
+    /* Убираем точки */
+    padding: 0;
+    /* Убираем отступы */
+    margin: 0;
+    /* Убираем отступы */
+    display: block;
+    /* Элементы в столбик */
+    text-decoration: underline;
+    }
+
 
  .nav-link {
      color: blue;
      /* Цвет текста ссылок */
-    font-size: 1.2rem;
-        /* Размер шрифта для ссылок */
-        margin-right: 1rem;
-            /* Отступ справа между ссылками */
-        }
- 
+     text-decoration: none;
+     /* Убираем подчеркивание */
+     font-size: 1.2rem;
+     /* Размер шрифта для ссылок */
+     margin-right: 2rem;
+     /* Отступ справа между ссылками */
+ }
 
  .nav-link:hover {
-     color: rgb;
-     /* Цвет текста при наведении */
+     color: rgb(0, 0, 255);
+     text-decoration: underline;
  }
-.nav {
-    justify-content: flex-start;
-    /* Выравнивание ссылок влево */
-}
- 
+ .footer-text {
+     position: absolute;
+     /* Фиксируем текст внутри контейнера */
+     bottom: 0px;
+     /* Отступ от низа контейнера */
+     left: 0;
+     /* Выравнивание по левому краю */
+     width: 100%;
+     /* Ширина на 100% */
+     text-align: center;
+     /* Центрирование текста */
+     font-size: 1rem;
+     /* Маленький размер шрифта */
+     background: none;
+     /* Полупрозрачный фон для читаемости */
+     padding: 0rem;
+     /* Отступы внутри блока */
+     box-shadow: none;
+     /* Тень сверху */
+ }
+
+ .footer-text p {
+     margin: 0rem 0;
+     /* Отступы между параграфами */
+ }
+
+ .footer-text a {
+     color: blue;
+     /* Цвет ссылок */
+     text-decoration: none;
+     /* Убираем подчеркивание */
+ }
+
+ .footer-text a:hover {
+     text-decoration: underline;
+     /* Подчеркивание при наведении */
+ }
