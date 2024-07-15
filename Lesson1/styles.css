@@ -1,4 +1,5 @@
-body,html {
+body,
+html {
     margin: 0;
     padding: 0;
     height: 100%;
@@ -27,6 +28,7 @@ body,html {
     font-size: 11em;
     text-align: center;
 }
+
 .navbar {
     position: absolute;
     top: 0;
@@ -98,54 +100,59 @@ body {
 }
 
 button {
-    background-color: #4CAF50; /* Зеленый цвет */
-    color: white; /* Цвет текста */
-    padding: 10px 20px; /* Отступы */
-    border: none; /* Без рамки */
-    border-radius: 4px; /* Закругленные углы */
-    cursor: pointer; /* Указатель курсора */
+    background-color: #4CAF50;
+    /* Зеленый цвет */
+    color: white;
+    /* Цвет текста */
+    padding: 10px 20px;
+    /* Отступы */
+    border: none;
+    /* Без рамки */
+    border-radius: 4px;
+    /* Закругленные углы */
+    cursor: pointer;
+    /* Указатель курсора */
 }
 
 button:hover {
-    background-color: #45a049; /* Темно-зеленый при наведении */
+    background-color: #45a049;
+    /* Темно-зеленый при наведении */
 }
 
- .footer-text {
-     position: absolute;
-     /* Фиксируем текст внутри контейнера */
-     bottom: 0px;
-     /* Отступ от низа контейнера */
-     left: 0;
-     /* Выравнивание по левому краю */
-     width: 100%;
-     /* Ширина на 100% */
-     text-align: center;
-     /* Центрирование текста */
-     font-size: 1rem;
-     /* Маленький размер шрифта */
-     background: none;
-     /* Полупрозрачный фон для читаемости */
-     padding: 0rem;
-     /* Отступы внутри блока */
-     box-shadow: none;
-     /* Тень сверху */
- }
+.footer-text {
+    position: absolute;
+    /* Фиксируем текст внутри контейнера */
+    bottom: 0px;
+    /* Отступ от низа контейнера */
+    left: 0;
+    /* Выравнивание по левому краю */
+    width: 100%;
+    /* Ширина на 100% */
+    text-align: center;
+    /* Центрирование текста */
+    font-size: 1rem;
+    /* Маленький размер шрифта */
+    background: none;
+    /* Полупрозрачный фон для читаемости */
+    padding: 0rem;
+    /* Отступы внутри блока */
+    box-shadow: none;
+    /* Тень сверху */
+}
 
- .footer-text p {
-     margin: 0rem 0;
-     /* Отступы между параграфами */
- }
+.footer-text p {
+    margin: 0rem 0;
+    /* Отступы между параграфами */
+}
 
- .footer-text a {
-     color: blue;
-     /* Цвет ссылок */
-     text-decoration: none;
-     /* Убираем подчеркивание */
- }
+.footer-text a {
+    color: blue;
+    /* Цвет ссылок */
+    text-decoration: none;
+    /* Убираем подчеркивание */
+}
 
- .footer-text a:hover {
-     text-decoration: underline;
-     /* Подчеркивание при наведении */
- }
-
-  
+.footer-text a:hover {
+    text-decoration: underline;
+    /* Подчеркивание при наведении */
+}
