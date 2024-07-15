@@ -11,22 +11,48 @@ div {
 }
 
 img {
-    max-width: 100%;
-    height: auto;
+    width: 100vw;
+    /* Занимает всю ширину окна */
+    height: 100vh;
+    /* Занимает всю высоту окна */
     display: block;
     margin: 0 auto;
+    object-fit: cover;
+    /* Сохраняет пропорции изображения */
 }
-
 /* Специфичные стили для изображения с классом "my-image" */
-.my-image {
-    border: 2px solid #000000;
-    border-radius: 10px;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
-    width: 500px;
-    height: auto;
-
+.image-container {
+    position: relative;
+    /* Позволяет позиционировать дочерние элементы относительно этого контейнера */
+    display: inline-block;
+    /* Оборачивает содержимое по размеру изображения */
 }
 
+.my-image {
+    width: 100vw;
+    /* Занимает всю ширину окна */
+    height: 100vh;
+    /* Занимает всю высоту окна */
+    object-fit: cover;
+    /* Сохраняет пропорции изображения */
+}
+
+.center-text {
+    position: absolute;
+    /* Абсолютное позиционирование относительно родителя */
+    top: 5%;
+    /* Установите значение для перемещения текста вверх */
+    left: 100%;
+    /* Центрирует текст по горизонтали */
+    transform: translate(-50%, -50%);
+    /* Сдвигает текст для центрирования по горизонтали */
+    color: white;
+    /* Цвет текста */
+    font-size: 2em;
+    /* Размер шрифта */
+    text-align: center;
+    /* Центрирование текста */
+}
 p {
     color: rgb(43, 226, 92);
 }
