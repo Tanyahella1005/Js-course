@@ -1,3 +1,21 @@
 p {
     color: blueviolet
 }
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Специфичные стили для изображения с классом "my-image" */
+.my-image {
+    border: 2px solid #000;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    width: 500px;
+    /* Укажите нужную ширину */
+    height: auto;
+    /* Автоматическая высота */
+}
