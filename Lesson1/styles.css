@@ -1,31 +1,7 @@
-.center-text {
-    text-align: center;
-    font-size: 24px;
-    /* Увеличенный шрифт */
-    color: #238149
-        /* Цвет текста */
-}
-
-div {
-    color: rgb(193, 127, 255);
-}
-
-img {
-    width: 100vw;
-    /* Занимает всю ширину окна */
-    height: 100vh;
-    /* Занимает всю высоту окна */
-    display: block;
-    margin: 0 auto;
-    object-fit: cover;
-    /* Сохраняет пропорции изображения */
-}
-/* Специфичные стили для изображения с классом "my-image" */
+/* Стили для контейнера с изображением */
 .image-container {
     position: relative;
-    /* Позволяет позиционировать дочерние элементы относительно этого контейнера */
     display: inline-block;
-    /* Оборачивает содержимое по размеру изображения */
 }
 
 .my-image {
@@ -39,20 +15,46 @@ img {
 
 .center-text {
     position: absolute;
-    /* Абсолютное позиционирование относительно родителя */
-    top: 5%;
-    /* Установите значение для перемещения текста вверх */
-    left: 100%;
-    /* Центрирует текст по горизонтали */
+    top: 30%;
+    left: 50%;
     transform: translate(-50%, -50%);
-    /* Сдвигает текст для центрирования по горизонтали */
-    color: white;
+    color: rgb(4, 2, 17);
     /* Цвет текста */
-    font-size: 2em;
+    font-size: 5em;
     /* Размер шрифта */
     text-align: center;
     /* Центрирование текста */
 }
-p {
-    color: rgb(43, 226, 92);
+
+/* Стили для навигационной панели */
+.navbar {
+    background-image: url('path/to/your/image.jpg');
+    /* Замените на путь к вашей картинке */
+    background-size: cover;
+    /* Заполняет панель фоном */
+    background-position: center;
+    /* Центрирует фоновое изображение */
+    padding: 1rem;
+    /* Отступы внутри панели */
+    color: white;
+    /* Цвет текста */
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    /* Размер шрифта для бренда */
+    font-weight: bold;
+    /* Жирный шрифт */
+    color: white;
+    /* Цвет текста бренда */
+}
+
+.nav-link {
+    color: white;
+    /* Цвет текста ссылок */
+}
+
+.nav-link:hover {
+    color: #f1f1f1;
+    /* Цвет текста при наведении */
 }
