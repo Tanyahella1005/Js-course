@@ -1,3 +1,13 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    /* Убираем прокрутку */
+}
+
 .image-container {
     position: relative;
     display: inline-block;
@@ -5,13 +15,13 @@
 
 .my-image {
     width: 100vw;
-    height: 200vh;
+    height: 100vh;
     object-fit: cover;
 }
 
 .center-text {
     position: absolute;
-    top: 5%;
+    top: 3%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: rgb(4, 2, 17);
@@ -19,7 +29,7 @@
     text-align: center;
 }
 
-/* Стили для навигационной панели */
+
 .navbar {
     position: absolute;
     top: 0;
@@ -47,24 +57,20 @@
     display: block;
     /* Элементы в столбик */
     text-decoration: underline;
-    }
+}
+.nav-link {
+    color: rgb(0, 76, 255);
+    /* Цвет ссылок */
+    font-size: 1.2rem;
+    /* Размер шрифта для ссылок */
+    margin-right: 2rem;
+    /* Отступ справа между ссылками */
+}
 
-
- .nav-link {
-    color: blue;
-        /* Цвет ссылок */
-        text-decoration: none;
-        /* Убираем подчеркивание */
-     font-size: 1.2rem;
-     /* Размер шрифта для ссылок */
-     margin-right: 2rem;
-     /* Отступ справа между ссылками */
- }
-
- .nav-link:hover {
-     color: rgb(0, 0, 255);
-     text-decoration: underline;
- }
+.nav-link:hover {
+    color: rgb(140, 0, 255);
+    text-decoration: underline;
+}
  .footer-text {
      position: absolute;
      /* Фиксируем текст внутри контейнера */
@@ -102,3 +108,5 @@
      text-decoration: underline;
      /* Подчеркивание при наведении */
  }
+
+  
