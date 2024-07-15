@@ -1,5 +1,4 @@
-body,
-html {
+body,html {
     margin: 0;
     padding: 0;
     height: 100%;
@@ -21,15 +20,13 @@ html {
 
 .center-text {
     position: absolute;
-    top: 3%;
+    top: 20%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: rgb(4, 2, 17);
-    font-size: 5em;
+    font-size: 8em;
     text-align: center;
 }
-
-
 .navbar {
     position: absolute;
     top: 0;
@@ -41,12 +38,6 @@ html {
     padding: 1.5rem;
 }
 
-.navbar-brand {
-    font-size: 2rem;
-    font-weight: bold;
-    color: rgb(36, 1, 1);
-}
-
 .nav {
     list-style-type: none;
     /* Убираем точки */
@@ -54,7 +45,7 @@ html {
     /* Убираем отступы */
     margin: 0;
     /* Убираем отступы */
-    display: block;
+    display: flex;
     /* Элементы в столбик */
     text-decoration: underline;
 }
@@ -71,6 +62,72 @@ html {
     color: rgb(140, 0, 255);
     text-decoration: underline;
 }
+
+.button-container {
+    position: absolute;
+    top: 5%;
+    right: 0%;
+    transform: translateY(-50%);
+}
+
+.donate-button {
+    background: linear-gradient(to right, yellow, lightblue);
+    /* Желто-голубой градиент */
+    color: black;
+    /* Цвет текста */
+    border: none;
+    /* Убираем рамку */
+    padding: 20px 30px;
+    /* Увеличенные отступы для улучшения вида */
+    font-size: 1.5em;
+    /* Размер шрифта */
+    cursor: pointer;
+    /* Указатель при наведении */
+    border-radius: 25px;
+    /* Скругление углов для облака */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    /* Тень */
+    position: relative;
+    /* Для создания псевдоэлементов */
+    overflow: hidden;
+    /* Убираем лишние части */
+    transition: background 0.3s;
+    /* Плавный переход при наведении */
+}
+
+.donate-button::before,
+.donate-button::after {
+    content: '';
+    position: absolute;
+    background: inherit;
+    /* Унаследовать градиент */
+    border-radius: 50%;
+    /* Сделать круглыми */
+    width: 50px;
+    /* Ширина */
+    height: 50px;
+    /* Высота */
+}
+
+.donate-button::before {
+    top: -25px;
+    /* Положение сверху */
+    left: 10px;
+    /* Положение слева */
+}
+
+.donate-button::after {
+    bottom: -25px;
+    /* Положение снизу */
+    right: 10px;
+    /* Положение справа */
+}
+
+.donate-button:hover {
+    background: linear-gradient(to right, lightblue, yellow);
+    /* Изменение градиента при наведении */
+}
+
  .footer-text {
      position: absolute;
      /* Фиксируем текст внутри контейнера */
