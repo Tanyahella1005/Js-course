@@ -55,6 +55,10 @@ html {
     /* Убираем отступы */
     display: flex;
     /* Элементы в линию */
+    flex-direction: row;
+     /* Горизонтальное выравнивание */
+    align-items: center;
+     /* Выравнивание по вертикали по центру */
     text-decoration: underline;
     /* Убираем подчеркивание по умолчанию */
 }
@@ -62,9 +66,9 @@ html {
 .nav-link {
     color: rgb(0, 76, 255);
     /* Цвет ссылок */
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     /* Размер шрифта для ссылок */
-    margin-right: 8rem;
+    margin-right: 5rem;
     /* Отступ справа между ссылками */
 }
 
